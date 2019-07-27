@@ -18,6 +18,11 @@
 / {
 	model = "Freescale i.MX6 Quad SABRE Smart Device Board";
 	compatible = "fsl,imx6q-sabresd", "fsl,imx6q";
+
+        memory {
+                reg = <0x10000000 0x80000000>; /* reg = 0x10000000 (base address) 0x80000000 (size = 17179869184 bits => 2048 MB) */
+        };
+
 };
 
 &battery {
